@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*
+ *  uni-app 全局样式表
+ *  作者:helang
+ *  邮箱:helang.love@qq.com
+*/
+/* 根元素样式 设置页面背景、字体大小、字体颜色，字符间距、长单词换行 */
+page {
+  background-color: #f3f3f3;
+  font-size: 28rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #333;
+  letter-spacing: 0;
+  word-wrap: break-word;
+}
+/* 设置常用元素尺寸规则 */
+view, textarea, input, label, form, button, image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* 按钮样式处理 */
+button {
+  font-size: 28rpx;
+}
+/* 取消按钮默认的边框线效果 */
+button:after {
+  border: none;
+}
+/* 设置图片默认样式，取消默认尺寸 */
+image {
+  display: block;
+  height: auto;
+  width: auto;
+}
+/* 输入框默认字体大小 */
+textarea, input {
+  font-size: 28rpx;
+}
+/* 列式弹性盒子 */
+.flex_col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-align-content: center;
+          align-content: center;
+}
+/* 行式弹性盒子 */
+.flex_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-align-content: flex-start;
+          align-content: flex-start;
+}
+/* 弹性盒子弹性容器 */
+.flex_col .flex_grow {
+  width: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+}
+.flex_row .flex_grow {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+}
+/* 弹性盒子允许换行 */
+.flex_col.flex_wrap {
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+/* 弹性盒子居中对齐 */
+.flex_col.flex_center, .flex_row.flex_center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+/* 列式弹性盒子两端对齐 */
+.flex_col.flex_space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+/* 弹性盒子快速分栏 ,这里非常郁闷 uniapp 居然不支持 * 选择器 */
+.flex_col.flex_col_2 > view {
+  width: 50%;
+}
+.flex_col.flex_col_3 > view {
+  width: 33.33333%;
+}
+.flex_col.flex_col_4 > view {
+  width: 25%;
+}
+.flex_col.flex_col_5 > view {
+  width: 20%;
+}
+.flex_col.flex_col_6 > view {
+  width: 16.66666%;
+}
+/* 字体颜色 */
+.color_333 {
+  color: #333;
+}
+.color_666 {
+  color: #666;
+}
+.color_999 {
+  color: #999;
+}
+.color_ccc {
+  color: #ccc;
+}
+.color_fff {
+  color: #fff;
+}
+.color_6dc {
+  color: #6dca6d;
+}
+.color_d51 {
+  color: #d51917;
+}
+.color_09f {
+  color: #0099ff;
+}
+/* 背景色*/
+.bg_fff {
+  background-color: #ffffff;
+}
+/* 字体大小 */
+.size_10 {
+  font-size: 20rpx;
+}
+.size_12 {
+  font-size: 24rpx;
+}
+.size_14 {
+  font-size: 28rpx;
+}
+.size_16 {
+  font-size: 32rpx;
+}
+.size_18 {
+  font-size: 36rpx;
+}
+.size_20 {
+  font-size: 40rpx;
+}
+/* 字体加粗 */
+.font_b {
+  font-weight: bold;
+}
+/* 对齐方式 */
+.align_c {
+  text-align: center;
+}
+.align_l {
+  text-align: left;
+}
+.align_r {
+  text-align: right;
+}
+/* 遮罩 */
+.shade {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+/* 弹窗 */
+.shade_box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 101;
+  min-width: 200rpx;
+  min-height: 200rpx;
+}
+page,
+.swiper,
+.swiper-item {
+  height: 100%;
+}
+/* 标题栏 */
+.title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.08);
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+}
+.title > view {
+  height: 44px;
+}
+.title .box1 {
+  width: 100rpx;
+  margin: 0 40rpx;
+  font-size: 40rpx;
+}
+.title .tab > view {
+  margin: 0 30rpx;
+  line-height: 64rpx;
+  font-size: 32rpx;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+}
+.title .tab > view.active {
+  color: white;
+}
+.title .tab > view.active:after {
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 70%;
+  background-color: #fff;
+  -webkit-border-radius: 1px;
+          border-radius: 1px;
+  left: 15%;
+  bottom: 0;
+}
+.test:hover {
+  display: none;
+}
+.swiper .swiper-item {
+  position: relative;
+  background: #FFFFFF;
+  overflow: hidden;
+  /* 添加阴影遮罩，增强文字显示 */
+}
+.swiper .swiper-item > image:nth-child(1) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 40px 30px;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: -30px;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+.swiper .swiper-item > image:nth-child(2) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.swiper .swiper-item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 65%;
+  z-index: 3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+}
+.info-box {
+  position: absolute;
+  bottom: 80rpx;
+  left: 50rpx;
+  z-index: 4;
+  color: #fff;
+  width: 500rpx;
+}
+.sidebar {
+  position: absolute;
+  bottom: 100rpx;
+  right: 50rpx;
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+  /* 按钮点击缩放效果 */
+}
+.sidebar .pic {
+  margin-bottom: 20rpx;
+}
+.sidebar .pic > image {
+  width: 80rpx;
+  height: 80rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: #fff solid 1px;
+}
+.sidebar .like {
+  font-size: 72rpx;
+  margin-bottom: 20rpx;
+}
+.sidebar .like > view {
+  font-size: 20rpx;
+  margin-top: 0;
+}
+.sidebar .read {
+  font-size: 64rpx;
+  margin-bottom: 80rpx;
+}
+.sidebar .read > view {
+  font-size: 20rpx;
+  margin-top: -6rpx;
+}
+.sidebar .menu {
+  width: 80rpx;
+  height: 80rpx;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: rgba(0, 0, 0, 0.5) solid 14rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.sidebar .menu > image {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.sidebar > view {
+  -webkit-transition: -webkit-transform 0.05s ease 0s;
+  transition: -webkit-transform 0.05s ease 0s;
+  transition: transform 0.05s ease 0s;
+  transition: transform 0.05s ease 0s, -webkit-transform 0.05s ease 0s;
+}
+.sidebar > view:active {
+  -webkit-transform: scale(0.95, 0.95);
+          transform: scale(0.95, 0.95);
+}
+

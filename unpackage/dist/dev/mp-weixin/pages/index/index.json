@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "音乐",
+  "usingComponents": {
+    "play": "/components/play/play",
+    "nav": "/components/zq-Nav/zq-Nav",
+    "carousel": "/components/vear-carousel/vear-carousel",
+    "popup-layer": "/components/popup-layer/popup-layer",
+    "m-search": "/components/mehaotian-search/mehaotian-search"
+  }
+}

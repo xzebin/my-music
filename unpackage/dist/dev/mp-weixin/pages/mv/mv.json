@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "MV",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "k-scroll-view": "/components/k-scroll-view/k-scroll-view",
+    "popup-layer": "/components/popup-layer/popup-layer",
+    "m-search": "/components/mehaotian-search/mehaotian-search",
+    "sy-video": "/components/shoyu-video/shoyu-video"
+  }
+}

@@ -1,0 +1,45 @@
+.custom-nav-box {
+  height: 100rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.custom-nav-box .custom-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  white-space: nowrap;
+}
+.custom-nav-box .custom-nav .nav {
+  display: inline-block;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  color: #d8d8d8;
+}
+.custom-nav-box .custom-nav .change-nav {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #ffbdd7;
+}
+.custom-nav-box .custom-nav-line {
+  position: relative;
+  height: 4rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.custom-nav-box .custom-nav-line .line {
+  width: 100rpx;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #ffbdd7 !important;
+}
+
